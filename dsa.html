@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA - CodeFuel</title>
+  <style>
+    h2 { color: #0984e3; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+   <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+      
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <div class="container">
+    <h2>Welcome to Data Structures & Algorithms (DSA)</h2>
+    <p>
+      Data Structures and Algorithms (DSA) form the foundation of efficient programming.  
+      Understanding DSA is crucial for problem-solving, competitive programming, and cracking technical interviews.
+    </p>
+
+    <h3>Topics You’ll Learn</h3>
+    <ul>
+      <li>Time and Space Complexity</li>
+      <li>Arrays & Strings</li>
+      <li>Linked Lists</li>
+      <li>Stacks & Queues</li>
+      <li>Trees & Binary Trees</li>
+      <li>Binary Search Trees (BST)</li>
+      <li>Graphs (BFS, DFS, Shortest Path)</li>
+      <li>Sorting Algorithms (Merge Sort, Quick Sort, etc.)</li>
+      <li>Dynamic Programming</li>
+      <li>Greedy Algorithms</li>
+      <li>Hashing</li>
+    </ul>
+
+    <h3>Example: Binary Search in C++</h3>
+    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int binarySearch(int arr[], int n, int key) {
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (arr[mid] == key)
+            return mid;
+        else if (arr[mid] < key)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+    return -1;
+}
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int n = 5, key = 30;
+    int result = binarySearch(arr, n, key);
+
+    if (result != -1)
+        cout &lt;&lt; "Element found at index " &lt;&lt; result;
+    else
+        cout &lt;&lt; "Element not found";
+
+    return 0;
+}
+    </pre>
+
+    <h3>Why Learn DSA?</h3>
+    <p>
+      ✔ Builds strong problem-solving skills <br>
+      ✔ Essential for competitive coding <br>
+      ✔ Boosts technical interview performance <br>
+      ✔ Helps in writing efficient and optimized code <br>
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

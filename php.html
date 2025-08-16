@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Tutorial - CodeFuel</title>
+  <style>
+    h2 { color: #27ae60; border-bottom: 2px solid #27ae60; padding-bottom: 5px; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <div class="container">
+    <h2>Introduction to PHP</h2>
+    <p>
+      PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development.  
+      It is used to create dynamic web pages and interact with databases.
+    </p>
+
+    <h2>Basic Syntax</h2>
+    <pre>
+&lt;?php
+// Display text
+echo "Hello, World!";
+
+// Variables
+$name = "Rupesh";
+$age = 20;
+
+// Comments
+// This is a single-line comment
+/* This is a multi-line comment */
+?&gt;
+    </pre>
+
+    <h2>Data Types</h2>
+    <ul>
+      <li><code>string</code> → "Hello"</li>
+      <li><code>integer</code> → 42</li>
+      <li><code>float</code> → 3.14</li>
+      <li><code>boolean</code> → true / false</li>
+      <li><code>array</code> → array(1, 2, 3)</li>
+      <li><code>object</code> → $obj = new ClassName();</li>
+      <li><code>null</code> → null</li>
+    </ul>
+
+    <h2>Conditional Statements</h2>
+    <pre>
+$age = 20;
+
+if($age >= 18){
+    echo "You are an adult";
+} else {
+    echo "You are a minor";
+}
+    </pre>
+
+    <h2>Loops</h2>
+    <pre>
+// For loop
+for($i = 1; $i <= 5; $i++){
+    echo "Number ".$i."&lt;br&gt;";
+}
+
+// While loop
+$count = 1;
+while($count <= 5){
+    echo "Count ".$count."&lt;br&gt;";
+    $count++;
+}
+
+// Foreach loop (arrays)
+$numbers = array(1,2,3,4,5);
+foreach($numbers as $num){
+    echo $num."&lt;br&gt;";
+}
+    </pre>
+
+    <h2>Functions</h2>
+    <pre>
+function greet($name){
+    echo "Hello, ".$name."!";
+}
+
+greet("Rupesh");
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>
+      PHP is widely used for server-side web development.  
+      Learning PHP allows you to create dynamic websites and interact with databases efficiently.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

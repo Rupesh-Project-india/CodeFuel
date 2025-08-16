@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFuel</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+    <div class="logo"><img src="icon.png" alt="CodeFuel Logo" style="width: 40px; height: 40px;"></div>
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#essentials">Essentials</a></li>
+        <li><a href="#reading">Reading</a></li>
+        <li><a href="#watching">Watching</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#related">Related</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+   <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+  
+  <div class="sub-nav-track">
+    <ul>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <!-- Authentication Modal -->
+    <div id="authModal">
+      <div class="auth-box">
+        <span class="close" onclick="closeAuth()">&times;</span>
+        <h3 id="authTitle">Login</h3>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p style="text-align:center; margin-top:10px;">Don't have an account? <a href="#" onclick="toggleSignup()">Signup</a></p>
+      </div>
+    </div>
+    <div id="signupModal" style="display:none;">
+      <div class="auth-box">
+        <span class="close" onclick="closeAuth()">&times;</span>
+        <h3>Signup</h3>
+        <input type="text" id="newUsername" placeholder="Username" required>
+        <input type="password" id="newPassword" placeholder="Password" required>
+        <button onclick="signup()">Signup</button>
+        <p style="text-align:center; margin-top:10px;">Already have an account? <a href="#" onclick="toggleSignup()">Login</a></p>
+      </div>
+    </div>
+    <!-- 🔥 Hero Section -->
+    <header>
+        <h2>Power Up Your Coding Life</h2>
+        <p>CodeFuel brings you the tools, resources, and essentials every developer needs to stay inspired, productive, and unstoppable.</p>
+        <a href="#essentials">Explore Essentials</a>
+    </header>
+    <!-- ⚡ About Section -->
+    <section id="about">
+        <h2>⚡ About CodeFuel</h2>
+        <p>At CodeFuel, we believe coding isn’t just about writing lines of code – it’s about building an environment that fuels creativity and growth.</p>
+        <p>Whether you’re a beginner, a student, or a professional developer, CodeFuel is here to power your journey with the right gear, learning resources, and community support.</p>
+    </section>
+    <!-- 📚 Reading Section -->
+    <section id="reading">
+    <h2>Reading</h2>
+    <p>Explore articles, blogs, and ebooks to fuel your coding knowledge. Learn concepts, best practices, and tips to grow as a developer.</p>
+    </section>
+
+    <!-- 🎥 Watching Section -->
+    <section id="watching">
+    <h2>Watching</h2>
+    <p>Find coding tutorials, walkthroughs, and tech talks that make learning more visual and engaging.</p>
+    </section>
+
+    <!-- 💻 Practice Section -->
+    <section id="practice">
+    <h2>Practice</h2>
+    <p>Sharpen your coding skills with hands-on exercises, challenges, and real-world projects.</p>
+    </section>
+
+    <!-- 🔗 Related Section -->
+    <section id="related">
+    <h2>Related</h2>
+    <p>Discover communities, tools, and external resources that help you stay connected and up-to-date with the coding world.</p>
+    </section>
+
+    <!-- 🖥️ What We Offer -->
+  <section id="essentials">
+    <h2>What We Offer</h2>
+   
+      <article>
+        <h3>High-Performance Gear</h3>
+        <p>From mechanical keyboards to ergonomic mice, we provide the best tools for your coding setup.</p>
+      </article>
+      <article>
+        <h3>Learning Resources</h3>
+        <p>Access a wide range of tutorials, ebooks, and courses to enhance your coding skills.</p>
+      </article>
+      <article>
+        <h3>Community Support</h3>
+        <p>Join our vibrant community of developers to share knowledge, collaborate on projects, and grow together.</p>
+      </article>
+    <article>
+      <h3>Coding Essentials</h3>
+      <p>High-performance keyboards, laptops, headphones, and accessories tailored for coders.</p>
+    </article>
+    <article>
+      <h3>Learning Resources</h3>
+      <p>Curated tutorials, ebooks, and guides to sharpen your skills.</p>
+    </article>
+    <article>
+      <h3>Productivity Tools</h3>
+      <p>Software, planners, and desk setups to boost efficiency.</p>
+    </article>
+    <article>
+      <h3>Coder Lifestyle Gear</h3>
+      <p>Cool T-shirts, mugs, stickers, and posters that showcase your passion for coding.</p>
+    </article>
+   
+  </section>
+ <!-- 🌍 Community -->
+  <section id="community">
+    <h2>Join the CodeFuel Community</h2>
+    <ul>
+      <li>💡 Share coding tips</li>
+      <li>🚀 Explore new projects</li>
+      <li>🤝 Connect with like-minded developers</li>
+    </ul>
+    <p><em>Together, we code. Together, we grow.</em></p>
+  </section>
+
+  <!-- ✨ Why Choose -->
+  <section id="why">
+    <h2>Why Choose CodeFuel?</h2>
+    <ul>
+      <li>✔ Designed for coders, by coders</li>
+      <li>✔ Premium quality essentials</li>
+      <li>✔ A vibrant, supportive community</li>
+      <li>✔ Inspiring lifestyle brand</li>
+    </ul>
+  </section>
+
+  <!-- 📬 Contact -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or ideas? We’d love to hear from you!</p>
+    <p>Email: <a href="mailto:support@codefuel.com">support@codefuel.com</a></p>
+    <p>Website: <a href="https://www.codefuel.com">www.codefuel.com</a></p>
+    <p>Follow us: Instagram | Twitter | GitHub</p>
+  </section>
+
+ <!-- 📝 Footer -->
+<footer>
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-col">
+      <h3>CodeFuel</h3>
+      <p>Fueling the coder’s journey with tools, learning resources, and a vibrant community.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#essentials">Essentials</a></li>
+        <li><a href="#reading">Reading</a></li>
+        <li><a href="#watching">Watching</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#related">Related</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  
+
+
+    <!-- Contact / Social -->
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <p>Email: <a href="mailto:support@codefuel.com">support@codefuel.com</a></p>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📸</a>
+        <a href="#">💻</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <strong>CodeFuel</strong>. All Rights Reserved.</p>
+    <p><em>Fuel Your Coding Journey.</em></p>
+  </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

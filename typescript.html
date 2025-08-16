@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript Tutorial - CodeFuel</title>
+  <style>
+    h2 { color: #27ae60; border-bottom: 2px solid #27ae60; padding-bottom: 5px; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+   <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <div class="container">
+    <h2>Introduction to TypeScript</h2>
+    <p>
+      TypeScript is a superset of JavaScript that adds static typing and modern features.  
+      It helps catch errors during development and makes code more maintainable.
+    </p>
+
+    <h2>Basic Syntax</h2>
+    <pre>
+// Display text
+console.log("Hello, World!");
+
+// Variables with types
+let name: string = "Rupesh";
+let age: number = 20;
+const isStudent: boolean = true;
+
+// Functions
+function greet(person: string): void {
+    console.log("Hello, " + person);
+}
+
+greet(name);
+    </pre>
+
+    <h2>Data Types</h2>
+    <ul>
+      <li><code>string</code> → "Hello"</li>
+      <li><code>number</code> → 42</li>
+      <li><code>boolean</code> → true / false</li>
+      <li><code>array</code> → number[] or string[]</li>
+      <li><code>tuple</code> → [string, number]</li>
+      <li><code>enum</code> → enum Color {Red, Green, Blue}</li>
+      <li><code>any</code> → any type</li>
+    </ul>
+
+    <h2>Conditional Statements</h2>
+    <pre>
+let age: number = 20;
+
+if(age >= 18){
+    console.log("You are an adult");
+} else {
+    console.log("You are a minor");
+}
+    </pre>
+
+    <h2>Loops</h2>
+    <pre>
+// For loop
+for(let i: number = 1; i <= 5; i++){
+    console.log("Number " + i);
+}
+
+// While loop
+let count: number = 1;
+while(count <= 5){
+    console.log("Count " + count);
+    count++;
+}
+    </pre>
+
+    <h2>Interfaces</h2>
+    <pre>
+interface Person {
+    name: string;
+    age: number;
+}
+
+const rupesh: Person = { name: "Rupesh", age: 20 };
+console.log(rupesh.name);
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>
+      TypeScript enhances JavaScript with type safety and better tooling.  
+      It is widely used in large-scale applications and frameworks like Angular.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

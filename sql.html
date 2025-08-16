@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Tutorial - CodeFuel</title>
+  <style>
+    h2 { color:#27ae60; border-bottom:2px solid #27ae60; padding-bottom:5px; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+  <div class="container">
+    <h2>Introduction to SQL</h2>
+    <p>
+      SQL (Structured Query Language) is used to manage and manipulate relational databases.  
+      It allows you to retrieve, insert, update, and delete data efficiently.
+    </p>
+
+    <h2>Basic Queries</h2>
+    <pre>
+-- Create a table
+CREATE TABLE Students (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+-- Insert data
+INSERT INTO Students (ID, Name, Age) VALUES (1, 'Rupesh', 20);
+
+-- Select data
+SELECT * FROM Students;
+
+-- Update data
+UPDATE Students SET Age = 21 WHERE ID = 1;
+
+-- Delete data
+DELETE FROM Students WHERE ID = 1;
+    </pre>
+
+    <h2>Filtering and Sorting</h2>
+    <pre>
+-- WHERE clause
+SELECT * FROM Students WHERE Age > 18;
+
+-- ORDER BY
+SELECT * FROM Students ORDER BY Name ASC;
+    </pre>
+
+    <h2>Aggregate Functions</h2>
+    <pre>
+SELECT COUNT(*) FROM Students;
+SELECT AVG(Age) FROM Students;
+SELECT MAX(Age) FROM Students;
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>
+      SQL is essential for working with relational databases.  
+      Learning SQL helps you query, manage, and analyze data efficiently.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

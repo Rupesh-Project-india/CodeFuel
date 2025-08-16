@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assembly Language - CodeFuel</title>
+  <style>
+    h2 { color: #0984e3; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <div class="container">
+    <h2>Assembly Language</h2>
+    <p>
+      Assembly language is a low-level programming language that is closely related to machine code.  
+      It allows programmers to write instructions that the CPU can execute directly.  
+      Each instruction corresponds almost one-to-one with machine code instructions.
+    </p>
+
+    <h3>Features of Assembly Language</h3>
+    <ul>
+      <li>Low-level language close to hardware</li>
+      <li>Fast execution and efficient memory usage</li>
+      <li>Uses mnemonics instead of binary codes</li>
+      <li>Machine-dependent (different for x86, ARM, etc.)</li>
+    </ul>
+
+    <h3>Basic Structure of Assembly Program</h3>
+    <p>An assembly program typically consists of:</p>
+    <ul>
+      <li><b>Data Section</b> – defines variables</li>
+      <li><b>Code Section</b> – contains instructions</li>
+      <li><b>Text Section</b> – program execution starts here</li>
+    </ul>
+
+    <h3>Example: Print "Hello, World!" in x86 Assembly (Linux)</h3>
+    <pre>
+section .data
+    msg db 'Hello, World!', 0xA
+    len equ $ - msg
+
+section .text
+    global _start
+
+_start:
+    ; write to stdout
+    mov eax, 4          ; system call for write
+    mov ebx, 1          ; file descriptor (stdout)
+    mov ecx, msg        ; message to write
+    mov edx, len        ; message length
+    int 0x80            ; call kernel
+
+    ; exit program
+    mov eax, 1          ; system call for exit
+    xor ebx, ebx        ; exit status 0
+    int 0x80
+    </pre>
+
+    <h3>When to Learn Assembly?</h3>
+    <p>
+      ✔ To understand how computers work internally <br>
+      ✔ For system programming and OS development <br>
+      ✔ For writing performance-critical code <br>
+      ✔ In cybersecurity, reverse engineering, and embedded systems <br>
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

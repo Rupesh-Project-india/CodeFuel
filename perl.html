@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perl Tutorial - CodeFuel</title>
+  <style>
+    h2 { color:#27ae60; border-bottom:2px solid #27ae60; padding-bottom:5px; }
+  </style>
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <!-- 🔽 Secondary Navbar (Programming Languages) -->
+ <div class="sub-nav-slider">
+  <button class="slide-btn left">&#10094;</button>
+    <div class="sub-nav-track">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="c.html">C</a></li>
+      <li><a href="cpp.html">C++</a></li>
+      <li><a href="dsa.html">DSA</a></li>
+      <li><a href="oops.html">OOPS</a></li>
+      <li><a href="assembly.html">Assembly</a></li>
+      <li><a href="matlab.html">MATLAB</a></li>
+      <li><a href="DSA_Sheet.html">DSA Sheet</a></li>
+      <li><a href="csharp.html">C#</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bash.html">Bash</a></li>
+      <li><a href="ruby.html">Ruby</a></li>
+      <li><a href="java.html">Java</a></li>
+      <li><a href="python.html">Python</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="typescript.html">TypeScript</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="go.html">Go</a></li>
+      <li><a href="swift.html">Swift</a></li>
+      <li><a href="kotlin.html">Kotlin</a></li>
+      <li><a href="rust.html">Rust</a></li>
+      <li><a href="dart.html">Dart</a></li>
+      <li><a href="perl.html">Perl</a></li>
+      <li><a href="sql.html">SQL</a></li>
+    </ul>
+  </div>
+  <button class="slide-btn right">&#10095;</button>
+</div>
+
+  <div class="container">
+    <h2>Introduction to Perl</h2>
+    <p>
+      Perl is a high-level, general-purpose programming language known for text processing and scripting.  
+      It is widely used for web development, system administration, and data manipulation.
+    </p>
+
+    <h2>Basic Syntax</h2>
+    <pre>
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "Hello, World!\n";
+
+my $name = "Rupesh";
+my $age = 20;
+    </pre>
+
+    <h2>Conditional Statements</h2>
+    <pre>
+my $age = 20;
+
+if($age >= 18) {
+    print "You are an adult\n";
+} else {
+    print "You are a minor\n";
+}
+    </pre>
+
+    <h2>Loops</h2>
+    <pre>
+# For loop
+for(my $i = 1; $i <= 5; $i++) {
+    print "Number $i\n";
+}
+
+# While loop
+my $count = 1;
+while($count <= 5) {
+    print "Count $count\n";
+    $count++;
+}
+    </pre>
+
+    <h2>Subroutines (Functions)</h2>
+    <pre>
+sub greet {
+    my ($name) = @_;
+    print "Hello, $name!\n";
+}
+
+greet("Rupesh");
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>
+      Perl is versatile, excellent for scripting and text manipulation, and widely used in legacy systems.  
+      Learning Perl allows you to handle files, strings, and data efficiently.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 CodeFuel. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
